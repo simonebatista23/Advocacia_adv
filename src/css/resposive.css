@@ -19,8 +19,7 @@
     }
 
     .work-people {
-
-        top: 48%;
+        top: 45%;
     }
 }
 
@@ -28,7 +27,7 @@
 @media (max-width:567px) {
 
     .container-img-people {
-        top: 15% !important;
+        top: 18% !important;
         margin-top: 0 !important;
     }
 
