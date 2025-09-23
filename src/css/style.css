@@ -361,10 +361,21 @@ h1,
     transition: 0.3s;
     font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
     margin-top: 5px;
+    display: inline-block;
 }
 
-.container-principal{
+.container-principal {
     background-color: #fff;
     width: 100%;
     height: 100%;
+}
+
+.title-responsive {
+    line-height: 1.1;
+    margin-bottom: .8rem;
+    font-size: clamp(1rem, 1.5vw + 1rem, 2rem);
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+    display: none;
 }

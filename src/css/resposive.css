@@ -74,8 +74,23 @@
     }
 
     .work-people {
-        top: 45%;
+        top: 50%;
     }
+
+    .home-hero__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .h1 {
+        display: none !important;
+    }
+
+    /* .title-responsive {
+        display: block;
+    } */
 }
 
 
@@ -99,10 +114,8 @@
         margin-bottom: .8rem;
         font-size: clamp(1rem, 1vw + 1rem, 3rem);
     }
-}
-
-@media (max-width: 380px) {
-    .home-hero__body {
-        margin-top: 15px;
+     .title-responsive {
+        font-size: clamp(1rem, 1.5vw + 1rem, 1.2rem);
     }
 }
+
