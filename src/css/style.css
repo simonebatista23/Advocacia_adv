@@ -147,7 +147,6 @@
     transform: rotate(-45deg) translate(4px, -4px);
 }
 
-/* Menu mobile lateral */
 .menu-body {
     width: 100%;
     display: flex;
@@ -163,7 +162,7 @@
 .mobile-menu {
     position: relative;
     height: 300px;
-    background: #fff;
+    background: #f7f5ff;
     box-shadow: -2px 0 6px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease;
     padding: 20px;
@@ -225,6 +224,7 @@
     width: 100%;
     height: 100vh;
     background-color: #051f24;
+    max-height: 1000px;
 }
 
 .body-container-people {
@@ -233,11 +233,12 @@
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .container-img-people {
     position: absolute;
-    width: 500px;
+    width: 40%;
     height: auto;
     right: 5%;
     top: 25%;
@@ -299,16 +300,14 @@
 }
 
 .container-card-desc {
-
     position: relative;
     top: 35%;
 }
 
 .home-hero__body {
-    width: 31%;
+    width: 34%;
     padding-top: 2rem;
     position: absolute;
-    left: 10%;
     height: 300px;
 }
 
@@ -362,12 +361,6 @@ h1,
     font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
     margin-top: 5px;
     display: inline-block;
-}
-
-.container-principal {
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
 }
 
 .title-responsive {

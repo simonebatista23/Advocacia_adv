@@ -21,7 +21,7 @@
     .container-img-people {
         position: relative;
         right: auto;
-        width: 80%;
+        width: 90%;
         margin-bottom: 20px;
         height: 70%;
         top: 0;
@@ -62,9 +62,32 @@
     .hamburger {
         display: flex;
     }
+
+    .founder-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .founder-image {
+        margin-top: 2rem;
+        max-width: 400px;
+    }
+
+    .founder-text {
+        max-width: 100%;
+    }
+
+    .founder-header a {
+        font-size: 14px;
+    }
+
+    .founder-section {
+        flex-direction: column-reverse;
+    }
 }
 
-@media (max-width:767px) {
+@media (max-width: 768px) {
     body {
         font-size: 1.6rem
     }
@@ -88,9 +111,48 @@
         display: none !important;
     }
 
-    /* .title-responsive {
-        display: block;
-    } */
+    .container,
+    .founder-content {
+        padding: 3rem 1.5rem;
+    }
+
+    .header-growth {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-action {
+        margin-top: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature-card {
+        min-height: 250px;
+    }
+
+    .feature-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .founder-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .founder-header h1 {
+        font-size: 2rem;
+    }
+
+
+    .card-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 
@@ -114,8 +176,33 @@
         margin-bottom: .8rem;
         font-size: clamp(1rem, 1vw + 1rem, 3rem);
     }
-     .title-responsive {
+
+    .title-responsive {
         font-size: clamp(1rem, 1.5vw + 1rem, 1.2rem);
     }
 }
 
+@media (max-width: 480px) {
+
+    .container,
+    .founder-content {
+        padding: 2rem 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .explore-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .founder-text p {
+        text-align: start;
+    }
+}
