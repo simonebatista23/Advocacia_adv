@@ -8,9 +8,9 @@ toggleBtn.addEventListener("click", () => {
 });
 
 const slides = [
-  { img: "src/img/foto_header_pessoa_1.jpg", activeId: "adv-civil" },
+  { img: "src/img/foto_header_pessoa_3.jpg", activeId: "adv-civil" },
   { img: "src/img/foto_header_pessoa_2.jpeg", activeId: "adv-trabalhista" },
-  { img: "src/img/foto_header_pessoa_3.jpg", activeId: "adv-familia" },
+  { img: "src/img/foto_header_pessoa_1.jpg", activeId: "adv-familia" },
 ];
 
 let index = 0;
