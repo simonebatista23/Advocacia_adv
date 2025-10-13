@@ -216,8 +216,156 @@
     margin-top: -1.6rem;
 }
 
+/* Base container styles (from your original code) */
+.container-backgroud-header-01 {
+    background-image: url('../img/Justice.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #051f24;
+    max-height: 1000px;
+    /* Added to position content inside */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inner container for positioning content over the image */
+.body-container-people-01 {
+    /* Use flexbox for overall centering and spacing of main elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Max width for desktop content */
+    max-width: 1200px;
+    /* Centers the content vertically in the available space */
+    height: 100%;
+    /* Padding for mobile screens */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* --- Logo/Header Styling --- */
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh; /* Position the logo a bit down from the top */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.logo-icon-placeholder {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff; /* Placeholder for the circular logo icon */
+    border-radius: 50%;
+    margin-right: 8px;
+    /* Optional: Add a small outline for the inner icon look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    padding: 2px;
+}
+.logo-icon-placeholder::before {
+    content: "⚖"; /* Using a scale icon as a placeholder */
+    color: #fff;
+    font-size: 0.7em;
+}
+
+
+/* --- Central Text Content Container --- */
+.text-content-center {
+    /* Pushes content down to appear centered over the image's main subject */
+    margin-top: auto; 
+    margin-bottom: 25vh; /* Adjust this value to control vertical position */
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+/* --- Main Headline Styling (Defending Your Rights...) --- */
+.main-headline {
+    font-size: clamp(2.5rem, 6vw, 5rem); /* Responsive font size */
+    font-weight: 300; /* Lighter weight for the first line */
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+}
+.main-headline span {
+    font-weight: 800; /* Heavier weight for "Pursuing" */
+}
+/* Note: I've wrapped the words "Pursuing" and "Justice" in the HTML as they appear in the image,
+   but I'm applying the strong style to 'span' which contains 'Pursuing' and setting a default
+   strong style to the following word 'Justice' implicitly by separating the lines.
+   If you want them to be on the same line but with different weight, adjust the HTML/CSS slightly.
+   Current structure: Defending Your Rights, (line break) Pursuing Justice (both bold)
+*/
+
+/* --- Sub-Headline Styling (Providing expert legal solutions...) --- */
+.tagline {
+    font-size: clamp(0.9rem, 2vw, 1.2rem); /* Responsive font size */
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7); /* Slightly muted white */
+    margin-bottom: 40px;
+}
+
+/* --- Search Box Styling --- */
+.search-box {
+    display: flex;
+    /* Keeps the responsive width, but it's important to check the MINIMUM size (250px) */
+    width: clamp(250px, 60%, 500px); 
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    /* REDUCE this padding slightly. If the button has 15px padding, the box padding adds to it. */
+    padding: 3px; 
+    background: rgba(255, 255, 255, 0.05);
+    box-sizing: border-box; /* Ensures padding is calculated inward */
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: #fff;
+    /* Reduce horizontal padding to save space on smaller screens */
+    padding: 10px 15px; 
+    outline: none;
+    font-size: 1rem;
+    /* Ensure the input doesn't shrink more than needed */
+    min-width: 0; 
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    /* Reduce horizontal padding on the button to save space */
+    padding: 0 10px; 
+    /* Use flexbox properties to prevent the button from getting too large */
+    flex-shrink: 0; 
+}
+
+.search-box button svg {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    fill: none;
+}
 .container-backgroud-header {
-    background-image: url('../img/bg-lines-fundo-header.svg');
+    background-image: url('../img/Justice.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -8,7 +8,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem !important; 
 }
 
 .law-section {
@@ -44,9 +44,20 @@
     color: #475467;
 }
 
-.header-action {
-    flex-shrink: 0;
+/* Estado Inicial: Oculto */
+.p1, .p2, .p3 {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
 }
+
+/* Estado de Exibição: A classe que o JS adiciona */
+.show-text {
+    display: block;
+    opacity: 1 !important; 
+}
+
+
 
 .explore-button {
     display: inline-block;
@@ -206,5 +217,3 @@
     height: auto;
     border-radius: 8px;
 }
-
-
