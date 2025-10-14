@@ -3,27 +3,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const featureCards = document.querySelectorAll('.feature-card');
 
     featureCards.forEach(card => {
-
         const iconButton = card.querySelector('.icon-button');
-
-
         const allTargetTexts = card.querySelectorAll('.p1, .p2, .p3');
 
         if (iconButton && allTargetTexts.length > 0) {
 
-            const handleMouseOver = function () {
-                allTargetTexts.forEach(p => p.classList.add('show-text'));
+            const handleClick = function () {
+                allTargetTexts.forEach(p => p.classList.toggle('show-text'));
             };
 
-            const handleMouseOut = function () {
-                allTargetTexts.forEach(p => p.classList.remove('show-text'));
-            };
+            iconButton.addEventListener('click', handleClick);
 
-            iconButton.addEventListener('mouseover', handleMouseOver);
-            iconButton.addEventListener('mouseout', handleMouseOut);
         }
     });
-
 
 });
 

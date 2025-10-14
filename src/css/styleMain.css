@@ -8,7 +8,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem !important; 
+    padding: 4rem 2rem !important;
 }
 
 .law-section {
@@ -45,16 +45,18 @@
 }
 
 /* Estado Inicial: Oculto */
-.p1, .p2, .p3 {
+.p1,
+.p2,
+.p3 {
     opacity: 0;
     display: none;
     transition: opacity 0.2s ease-in-out;
+    font-size: 16px;
 }
 
-/* Estado de Exibição: A classe que o JS adiciona */
 .show-text {
     display: block;
-    opacity: 1 !important; 
+    opacity: 1 !important;
 }
 
 
@@ -75,6 +77,10 @@
     transform: translateY(-2px);
 }
 
+#escritorio {
+    background-color: color-mix(in oklab, #f1edee 40%, transparent);
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -82,7 +88,7 @@
 }
 
 .feature-card {
-    background-color: #cce7ff;
+    background-color: #fff;
     border-radius: 12px;
     padding: 2rem;
     min-height: 300px;
@@ -119,8 +125,9 @@
 
 .founder-container {
     width: 100%;
-    background: linear-gradient(217deg, #0a4858 25.35%, #052025 75.21%);
-    ;
+    /* background: linear-gradient(217deg, #0a4858 25.35%, #052025 75.21%);
+    ; */
+    background-color: color-mix(in oklab, #f1edee 40%, transparent);
 }
 
 .founder-header {
@@ -129,7 +136,7 @@
     align-items: flex-start;
     margin-bottom: 2.5rem;
     gap: 1.5rem;
-    color: #fff;
+    color: #000;
 }
 
 .founder-header h1 {
@@ -139,8 +146,12 @@
     max-width: 450px;
 }
 
+#contato {
+    background-color: color-mix(in oklab, #f1edee 40%, transparent) !important;
+}
+
 .cta-button {
-    background-color: #e0ffa8;
+    background-color: #cce7ff;
     color: #1a1a1a;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
@@ -151,7 +162,7 @@
 }
 
 .cta-button:hover {
-    background-color: #a5d6a7;
+    background-color: #9ecffb;
 }
 
 .founder-content {
@@ -169,7 +180,8 @@
 
 .founder-text {
     --bg-opacity: 1;
-    background-color: rgba(184, 225, 255, var(--bg-opacity)) !important;
+    /* background-color: rgba(184, 225, 255, var(--bg-opacity)) !important; */
+    background-color: #fff;
     color: #333;
     padding: 2.5rem;
     border-radius: 12px;
