@@ -23,6 +23,7 @@
     background: #f7f5ff;
     border: 1px solid #f7f5ff;
     position: relative;
+    align-items: center;
 }
 
 
@@ -71,7 +72,7 @@
 }
 
 .menu li:hover a {
-    background: #e0ffa8;
+    background: #f1edee;
 }
 
 .menu li:hover a::after {

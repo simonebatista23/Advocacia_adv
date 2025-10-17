@@ -151,18 +151,19 @@
 }
 
 .cta-button {
-    background-color: #cce7ff;
-    color: #1a1a1a;
+    background-color: #580024;
+    color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 500;
     white-space: nowrap;
     transition: background-color 0.3s ease;
+    cursor: default !important;
 }
 
 .cta-button:hover {
-    background-color: #9ecffb;
+    background-color: #390018;
 }
 
 .founder-content {
@@ -171,7 +172,7 @@
     padding: 4rem 2rem;
 }
 
-.founder-section {
+.founder-section,.founder-section-about {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -188,6 +189,18 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     flex: 1;
     max-width: 700px;
+}
+
+.founder-text-about{
+    --bg-opacity: 1;
+    /* background-color: rgba(184, 225, 255, var(--bg-opacity)) !important; */
+    background-color: #fff;
+    color: #333;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 100%;
 }
 
 .founder-text p {
@@ -223,8 +236,12 @@
     flex: 1;
     max-width: 480px;
 }
+.founder-image-nos {
+    flex: 1;
+}
 
-.founder-image img {
+
+.founder-image img{
     width: 100%;
     height: auto;
     border-radius: 8px;
