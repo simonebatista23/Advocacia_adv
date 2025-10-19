@@ -217,7 +217,7 @@
     margin-top: -1.6rem;
 }
 
-/* Base container styles (from your original code) */
+
 .container-backgroud-header-01 {
     background-image: url('../img/capa.png');
     background-repeat: no-repeat;
@@ -225,9 +225,7 @@
     background-position: center;
     width: 100%;
     height: 100vh;
-    background-color: #051f24;
     max-height: 1000px;
-    /* Added to position content inside */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -235,23 +233,18 @@
     align-items: center;
 }
 
-/* Inner container for positioning content over the image */
+
 .body-container-people-01 {
-    /* Use flexbox for overall centering and spacing of main elements */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* Max width for desktop content */
     max-width: 1200px;
-    /* Centers the content vertically in the available space */
     height: 100%;
-    /* Padding for mobile screens */
     padding: 0 20px;
     box-sizing: border-box;
 }
 
-/* --- Logo/Header Styling --- */
 .header-logo {
     display: flex;
     align-items: center;
@@ -281,7 +274,6 @@
 }
 
 
-/* --- Central Text Content Container --- */
 .text-content-center {
     margin-top: auto; 
     margin-bottom: 25vh; 
