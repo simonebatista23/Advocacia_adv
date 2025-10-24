@@ -1,3 +1,11 @@
+html, body {
+  touch-action: manipulation;
+}
+button {
+  pointer-events: auto;
+}
+
+
 .header {
     padding-top: 2rem;
     position: fixed;
@@ -219,7 +227,7 @@
 
 
 .container-backgroud-header-01 {
-    background-image: url('../img/Justice\ \(12\).png');
+    background-image: url('../img/Capa2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
